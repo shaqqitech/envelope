@@ -22,7 +22,7 @@ const Envelope = () => {
     };
 
   return (
-    <div className="w-full h-screen flex justify-center items-end pb-28 relative bg-rose-900">
+    <div className="w-full h-screen flex justify-center items-end pb-28 relative bg-black">
       {/* Complete Enelope */}
       <div className="w-80 h-60 relative">
         {/* Evelope 4 pages */}
@@ -41,7 +41,7 @@ const Envelope = () => {
         </div>
         {/* Evelope Cards */}
         <div
-          className={`w-full h-full absolute bg-black/40 ring-2 ring-white z-10 transition-all ease-out delay-300 rounded-xl p-1 text-white ${
+          className={`w-full h-full absolute bg-black ring-2 ring-white z-10 transition-all ease-out delay-300 rounded-xl p-1 text-white ${
             isOpen ? "-translate-y-32" : "translate-y-0"
           }`}
         >
