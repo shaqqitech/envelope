@@ -41,7 +41,7 @@ const Envelope = () => {
         </div>
         {/* Evelope Cards */}
         <div
-          className={`w-full h-full absolute bg-gradient-to-br from-red-900 via-rose-800 to-red-900 ring-2 ring-white z-0 transition-all ease-out delay-300 rounded-xl p-1 text-white ${
+          className={`w-full h-full absolute bg-black/40 ring-2 ring-white z-0 transition-all ease-out delay-300 rounded-xl p-1 text-white ${
             isOpen ? "-translate-y-32" : "translate-y-0"
           }`}
         >
