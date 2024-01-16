@@ -22,7 +22,7 @@ const Envelope = () => {
     };
 
   return (
-    <div className="w-full h-screen flex justify-center items-end pb-28 relative bg-black">
+    <div className="w-full h-screen flex justify-center items-end pb-44 relative bg-black">
       {/* Complete Enelope */}
       <div className="w-80 h-60 relative">
         {/* Evelope 4 pages */}
