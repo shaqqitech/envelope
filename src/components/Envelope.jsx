@@ -30,34 +30,34 @@ const Envelope = () => {
           className="w-80 h-60 ring-4 ring-rose-800 overflow-hidden cursor-pointer  rounded-xl absolute"
           onClick={handleClick}
         >
-          <div className="w-60 h-80 -right-[185px] absolute ring-2 ring-rose-800 -rotate-45 bg-white z-10 bg-gradient-to-l from-pink-600 via-pink-700 to-red-800"></div>
-          <div className="w-60 h-80 -left-[185px] absolute ring-2 ring-rose-800 rotate-45 bg-white z-10 bg-gradient-to-r from-pink-600 via-pink-700 to-red-800"></div>
-          <div className="w-60 h-80 left-3 -bottom-[185px] rounded-t-3xl absolute ring-2 ring-rose-800 rotate-45 z-10 bg-white bg-gradient-to-tr from-pink-600 via-pink-700 to-red-800"></div>
+          <div className="w-60 h-80 -right-[185px] absolute ring-2 ring-rose-800 -rotate-45 bg-white z-20 bg-gradient-to-l from-pink-600 via-pink-700 to-red-800"></div>
+          <div className="w-60 h-80 -left-[185px] absolute ring-2 ring-rose-800 rotate-45 bg-white z-20 bg-gradient-to-r from-pink-600 via-pink-700 to-red-800"></div>
+          <div className="w-60 h-80 left-3 -bottom-[185px] rounded-t-3xl absolute ring-2 ring-rose-800 rotate-45 z-20 bg-white bg-gradient-to-tr from-pink-600 via-pink-700 to-red-800"></div>
           <div
             className={`w-60 h-80 right-3 -top-[195px] rounded-b-3xl absolute ring-2 ring-rose-800 transition-all ease-out delay-300 bg-gradient-to-b from-pink-600 via-pink-700 to-red-800 ${
-              isOpen ? "-z-40" : "rotate-45"
-            } z-10 bg-white`}
+              isOpen ? "-z-50" : "rotate-45 z-20"
+            }  bg-white`}
           ></div>
         </div>
         {/* Evelope Cards */}
         <div
-          className={`w-full h-full absolute bg-black/40 ring-2 ring-white z-0 transition-all ease-out delay-300 rounded-xl p-1 text-white ${
+          className={`w-full h-full absolute bg-black/40 ring-2 ring-white z-10 transition-all ease-out delay-300 rounded-xl p-1 text-white ${
             isOpen ? "-translate-y-32" : "translate-y-0"
           }`}
         >
           <MdChevronLeft
-            size={20}
+            size={30}
             className="bg-white left-1 cursor-pointer rounded-full absolute opacity-50 hover:opacity-100 z-50 text-black top-1/2 transform -translate-y-1/2"
             onClick={prevCard}
           />
-          <div className="w-full h-full border-2 border-white border-dashed rounded-lg p-5">
+          <div className="w-full h-full border-2 border-white border-dashed rounded-lg p-5 z-10">
             <div className="w-full h-full flex flex-col text-white text-center space-y-2">
               <h1 className={`font-semibold text-lg ${mulish.className}`}>{data[currentIndex].title}</h1>
               <p className={`${kalam.className}`}>{data[currentIndex].desc}</p>
             </div>
           </div>
           <MdChevronRight
-            size={20}
+            size={30}
             className="bg-white right-1 cursor-pointer rounded-full absolute opacity-50 hover:opacity-100 z-50 text-black top-1/2 transform -translate-y-1/2"
             onClick={nextCard}
           />
